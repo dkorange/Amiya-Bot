@@ -13,7 +13,7 @@ face_dir = 'resource/images/face/'
 images = []
 for root, dirs, files in os.walk(face_dir.strip('/')):
     for item in files:
-        if item != '.gitkeep':
+        if item not in ['.gitkeep', 'haoye.jpg']:
             images.append(item)
 
 
@@ -22,8 +22,11 @@ def face_image(data):
 
     only_at = message == '' and data['is_at']
 
-    if (only_at or eliminate_name(message)) and images:
+    if re.search('好耶', message):
+        path = face_dir + 'haoye.jpg'
+    elif (only_at or eliminate_name(message)) and images:
         path = face_dir + random.choice(images)
+    if path:
         return Reply(Image(path), at=False)
 
 

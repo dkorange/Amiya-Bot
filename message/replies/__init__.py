@@ -61,6 +61,11 @@ def reply_func_list(data):
                 # 自然语言处理
                 'func': natural_language_processing,
                 'need_call': True
+            },
+            {
+                # misc
+                'func': misc,
+                'need_call': False,
             }
         ]
     else:
