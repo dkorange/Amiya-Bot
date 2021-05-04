@@ -8,6 +8,7 @@ from .greeting import greeting
 from .faceImage import face_image
 from .adminForGroup import group_admin
 from .nlp import natural_language_processing
+from .misc import misc
 
 function = FunctionsIndex()
 database = BaseController()
