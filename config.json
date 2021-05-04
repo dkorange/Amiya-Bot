@@ -1,16 +1,16 @@
 {
-    "self_id": 1515361402,
-    "admin_id": 826197021,
+    "self_id": 2302823790,
+    "admin_id": 294956927,
     "server": {
         "server_ip": "127.0.0.1",
-        "server_port": 8060,
-        "auth_key": "AMIYARESTART"
+        "server_port": 8070,
+        "auth_key": "ORANGE233"
     },
     "database": {
         "host": "localhost",
         "port": 3306,
         "user": "root",
-        "password": "amiya520",
+        "password": "orange",
         "db": "amiya"
     },
     "baidu_cloud": {
