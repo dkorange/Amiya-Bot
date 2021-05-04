@@ -88,7 +88,8 @@ class Operator:
         return self.db.select(sql=sql, fields=['skill_index', 'operator_name'])
 
     def get_all_stories_title(self):
-        return self.db.select('t_operator_stories', sql='SELECT * FROM t_operator_stories GROUP BY story_title')
+        # return self.db.select('t_operator_stories', sql='SELECT * FROM t_operator_stories GROUP BY story_title')
+        return self.db.select(sql='SELECT story_title FROM t_operator_stories GROUP BY story_title', fields=['story_title'])
 
     def find_operator_all_detail(self, operator_id):
         where = Where({
