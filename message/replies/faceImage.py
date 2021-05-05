@@ -22,6 +22,7 @@ def face_image(data):
 
     only_at = message == '' and data['is_at']
 
+    path = None
     if re.search('好耶', message):
         path = face_dir + 'haoye.jpg'
     elif (only_at or eliminate_name(message)) and images:

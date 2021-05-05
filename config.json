@@ -14,10 +14,10 @@
         "db": "amiya"
     },
     "baidu_cloud": {
-        "enable": false,
-        "app_id": "",
-        "api_key": "",
-        "secret_key": ""
+        "enable": true,
+        "app_id": "24109066",
+        "api_key": "XmshimlhIhMGmjBRDgK3ioCp",
+        "secret_key": "vTMvxsOOCwouQjimAIMUSFilgPBuH4Qi"
     },
     "message": {
         "limit": {
